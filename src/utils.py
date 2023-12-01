@@ -42,8 +42,6 @@ def get_msgs_df_info(df):
     links_count_dict = df.groupby("user").link_count.sum().to_dict()
     return msgs_count_dict, replies_count_dict, mentions_count_dict, links_count_dict
 
-
-
 def get_messages_dict(msgs):
     msg_list = {
             "msg_id":[],
@@ -59,8 +57,6 @@ def get_messages_dict(msgs):
             "links":[],
             "link_count":[]
             }
-
-
     for msg in msgs:
         if "subtype" not in msg:
             try:

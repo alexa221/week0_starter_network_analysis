@@ -26,7 +26,6 @@ class SlackDataLoader:
     These files contain metadata about the conversations, including their names and IDs.
 
     For secruity reason, we have annonymized names - the names you will see are generated using faker library.
-    
     '''
     def __init__(self, path):
         '''
